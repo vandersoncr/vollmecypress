@@ -41,10 +41,4 @@ jobs:
             cypress/e2e/login-clinica.cy.js
             cypress/e2e/dashboard.cy.js
           wait-on: 'http://localhost:3001,http://localhost:8080'
-          record: true
-          parallel: true
-          group: 'Cypress Tests'
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#Sempre verifique a indentação do seu arquivo yaml
+
