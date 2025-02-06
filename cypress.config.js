@@ -18,7 +18,7 @@ module.exports = defineConfig({
       json: false,
       timestamp: "mmddyyyy_HHMMss"
     },
-    projectId: "8gi3z6", //Insira a projectId pela fornecida no seu Cypress Cloud
+    projectId: "wzy1nu",
     defaultCommandTimeout: 60000,
     env:{
       "email": "clinica@gmail.com",

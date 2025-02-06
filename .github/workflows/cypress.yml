@@ -12,9 +12,9 @@ jobs:
         containers: [1, 2]
     steps:
       - name: Checkout
-        uses: actions/vandersoncr    
+        uses: actions/checkout@v4      
       - name: Checkout
-        uses: actions/vandersoncr
+        uses: actions/checkout@v4
         with: 
           path: server      
       - name: Start Server BackEnd
@@ -34,7 +34,7 @@ jobs:
           npm install
           npm start &        
       - name: Run Cypress Tests
-        uses: cypress-io/github-vandersoncr
+        uses: cypress-io/github-action@v6
         with:
           spec: |
             cypress/e2e/cadastro-sucesso.cy.js
